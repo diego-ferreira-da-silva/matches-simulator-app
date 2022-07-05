@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.diegofds92.simulator.databinding.ActivityMainBinding;
 
-public class MainActivityJava extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
 
