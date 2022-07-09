@@ -8,10 +8,8 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.http.GET;
 
-public class MatchesApi {
+public interface MatchesApi {
 
     @GET("matches.json")
-    public Call<List<Match>> getMatches() {
-        return null;
-    }
+    public Call<List<Match>> getMatches();
 }

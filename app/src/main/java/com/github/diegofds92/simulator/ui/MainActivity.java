@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        //setupHttpClient();
-        //setupMatchesList();
+        setupHttpClient();
+        setupMatchesList();
         //Funcionando sem o http e Matches
         setupMatchesRefresh();
         setupFloatingActionButton();
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupHttpClient() {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://diegofds92.github.io/matches-simulator-api")
+                .baseUrl("https://diegofds92.github.io/matches-simulator-api/")
                 .addConverterFactory(GsonConverterFactory.create()).build();
 
         matchesApi = retrofit.create(MatchesApi.class);
