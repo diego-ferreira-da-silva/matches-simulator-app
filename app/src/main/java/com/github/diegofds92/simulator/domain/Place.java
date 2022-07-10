@@ -1,7 +1,11 @@
-package com.github.diegofds92.simulator;
+package com.github.diegofds92.simulator.domain;
+
+import com.google.gson.annotations.SerializedName;
 
 public class Place {
+    //@SerializedName("nome")
     private String name;
+    //@SerializedName("imagem")
     private String image;
 
     public String getName() {
