@@ -1,4 +1,4 @@
-package com.github.diegofds92.simulator
+package com.github.diegofds92.simulator.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
